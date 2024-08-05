@@ -1,0 +1,35 @@
+,type_of_meal_plan,required_car_parking_space,room_type_reserved,properties_id
+0,Meal Plan 1,0,Room_Type 1,1001
+1,Not Selected,0,Room_Type 1,1002
+5,Meal Plan 2,0,Room_Type 1,1003
+7,Meal Plan 1,0,Room_Type 4,1004
+32,Meal Plan 1,0,Room_Type 2,1005
+35,Not Selected,1,Room_Type 1,1006
+60,Meal Plan 1,1,Room_Type 6,1007
+72,Meal Plan 1,1,Room_Type 1,1008
+80,Meal Plan 1,0,Room_Type 6,1009
+84,Meal Plan 1,1,Room_Type 4,1010
+89,Meal Plan 1,0,Room_Type 5,1011
+162,Meal Plan 1,0,Room_Type 7,1012
+259,Meal Plan 2,0,Room_Type 4,1013
+428,Meal Plan 2,1,Room_Type 4,1014
+464,Meal Plan 2,1,Room_Type 1,1015
+618,Meal Plan 2,0,Room_Type 7,1016
+655,Meal Plan 2,0,Room_Type 5,1017
+701,Not Selected,0,Room_Type 4,1018
+957,Meal Plan 2,0,Room_Type 6,1019
+1694,Not Selected,0,Room_Type 3,1020
+1861,Not Selected,0,Room_Type 2,1021
+1883,Meal Plan 2,0,Room_Type 2,1022
+2198,Meal Plan 1,1,Room_Type 2,1023
+2898,Not Selected,0,Room_Type 6,1024
+4362,Meal Plan 1,0,Room_Type 3,1025
+4454,Not Selected,0,Room_Type 5,1026
+6615,Not Selected,0,Room_Type 7,1027
+7469,Meal Plan 1,1,Room_Type 5,1028
+8558,Meal Plan 3,0,Room_Type 1,1029
+9213,Not Selected,1,Room_Type 6,1030
+9922,Meal Plan 1,1,Room_Type 7,1031
+11922,Meal Plan 3,1,Room_Type 4,1032
+12423,Meal Plan 3,0,Room_Type 7,1033
+13944,Meal Plan 2,1,Room_Type 6,1034

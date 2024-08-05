@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f8ff;
+            margin: 0;
+        }
+        .home-container {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .btn-custom {
+            width: 200px;
+            margin: 10px 0;
+        }
+        .logout-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="home-container">
+        <h1>Welcome to the Webpage</h1>
+        <button class="btn btn-primary btn-custom" onclick="location.href='/data_overview'">Data Overview</button>
+        <button class="btn btn-secondary btn-custom" onclick="location.href='/room_overview'">Room Overview</button>
+    </div>
+    <button class="btn btn-danger logout-button" onclick="location.href='/login'">Log Out</button>
+</body>
+</html>

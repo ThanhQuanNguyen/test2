@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Room Data Overview</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css">
+  <style>
+    body {
+      margin: 0; /* Remove default body margin */
+      padding: 0; /* Remove default body padding */
+      display: flex;
+      flex-direction: row;
+      height: 100vh; /* Full viewport height */
+    }
+
+    .plot-image {
+      width: 50%; /* Adjust as needed */
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      width: 50%; /* Adjust as needed */
+      padding: 20px;
+      box-sizing: border-box;
+      overflow: auto;
+    }
+
+    .scrollable-table {
+      overflow: auto;
+      max-height: calc(100vh - 40px); /* Adjust height to fit within the viewport */
+    }
+
+    .dataframe {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .dataframe th, .dataframe td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    .dataframe th {
+      position: sticky;
+      top: 0;
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <div class="plot-image">
+    <img src="{{ plot_url }}" alt="Room Data Chart" style="width: 100%; height: auto;" />
+  </div>
+
+  <div class="container">
+    <h1>Room Data Overview</h1>
+    <div class="scrollable-table">
+      {% for table in tables %}
+        {{ table|safe }}
+      {% endfor %}
+    </div>
+  </div>
+</body>
+</html>

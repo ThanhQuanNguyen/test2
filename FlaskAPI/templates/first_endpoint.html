@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f8ff;
+        }
+        .home-container {
+            text-align: center;
+            padding: 30px;
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .welcome-message {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="home-container">
+        <div id="welcome-message" class="welcome-message">
+            {% if logged_in %}
+                <h1>Welcome to the webpage, {{ username }}</h1>
+            {% else %}
+                <h1>Welcome to my webpage, but you did not login yet.</h1>
+                <p>Try to <a href="{{ url_for('login') }}" class="btn btn-link">login here</a></p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
